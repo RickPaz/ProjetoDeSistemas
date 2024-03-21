@@ -25,8 +25,10 @@ public class Numero {
         return valor;
     }
 
-    public void setValor(int valor) {
-        this.valor = valor;
+    public void setValor(int v) {
+        if ((v >= 0) && (v < this.limite)){
+        this.valor = v;
+        }
     }
     
 }
