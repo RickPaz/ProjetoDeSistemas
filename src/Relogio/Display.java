@@ -18,6 +18,7 @@ public class Display {
     public void setHora(int h, int m) {
         horas.setValor(h);
         minutos.setValor(m);
+        updateDisplay();
     }
     public void updateDisplay() {
         stringDisplay = horas.getValorDisplay() +":"+ minutos.getValorDisplay();
